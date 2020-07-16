@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Grid</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=MuseoModerno&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top">
+        This is Grid!
+    </header>
+    <main>
+        <div class="main-title">1️⃣Column & Row</div>
+        <section class="columnNrow">
+            <section class="item">
+                <div class="title">✔Columns <span class="desc">using 'grid-template-columns'</span></div>
+                <section class="column">
+                    <div>Col1</div>
+                    <div>Col2</div>
+                    <div>Col3</div>
+                </section>
+            </section>
+            
+            <section class="item">
+                <div class="title">✔Rows <span class="desc">using 'grid-template-rows'</span></div>
+                <section class="row">
+                    <div>Row1</div>
+                    <div>Row2</div>
+                    <div>Row3</div>
+                </section>
+            </section>
+
+            <section class="item">
+                <div class="title">✔Col & Row <span class="desc">using 'grid-template: row/col'</span></div>
+                <section class="cNr">
+                    <div>R1C1</div>
+                    <div>R1C2</div>
+                    <div>R1C3</div>
+                    <div>R2C1</div>
+                    <div>R2C2</div>
+                    <div>R2C3</div>
+                    <div>R1C1</div>
+                    <div>R2C2</div>
+                    <div>R3C3</div>
+                </section>
+            </section>
+                    
+            <section class="item">
+                <div class="title">✔Fraction <span class="desc">using '_fr'</span></div>
+                <section class="fraction">
+                    <div>R1C1-2fr/1fr</div>
+                    <div>R1C2-2fr/3fr</div>
+                    <div>R1C3-2fr/2fr</div>
+                    <div>R2C1-1fr/1fr</div>
+                    <div>R2C2-1fr/3fr</div>
+                    <div>R2C3-1fr/2fr</div>
+                    <div>R1C1-1fr/1fr</div>
+                    <div>R2C2-1fr/3fr</div>
+                    <div>R3C3-1fr/2fr</div>
+                </section>
+            </section>
+            
+            <section class="item">
+                <div class="title">✔Grid Start,End <span class="desc">using 'grid-'</span></div>
+                <section class="gridRow">
+                    <div class="boxR">grid-row: 4/6</div>
+                    <div class="boxR2">grid-row: 3/5</div>
+                    <div class="boxR3">grid-row:2/ span 3</div>
+                    <div>box1</div>
+                    <div>box2</div>
+                    <div>box3</div>
+                    <div>box4</div>
+                    <div>box5</div>
+                    <div>box6</div>
+                    <div>box7</div>
+                    <div>box8</div>
+                </section>
+                <br>
+                <section class="gridCol">
+                    <div class="boxC">grid-column: 1/span 4</div>
+                    <div class="boxC2">grid-column: span 2/7</div>
+                </section>
+                <br>
+                <section class="gridBoth">
+                    <div class="boxRC">grid-row: 5/7 <br> grid-column:3/span2</div>
+                    <div class="boxRC2">grid-area: 2/ 7/ span 4/ span 1;</div>
+                </section>
+            </section>
+        </section>
+        <div class="main-title">2️⃣Areas</div>
+        <section class="grid-areas">
+            <section class="item">
+                <div class="title">✔Areas <span class="desc">using 'grid-template-areas'</span></div>
+                <span class="desc-how">"grid-template: 5vh 20vh 30vh 20vh 5vh /20vw 40vw 20vw"</span>
+                <section class="area">
+                    <header>Header <h5>header header header</h5></header>
+                    <nav>Nav</nav> <h5>nav nav nav</h5>
+                    <section class="left">Left <h5>left left</h5></section>
+                    <section class="right">Right <h5>right</h5></section>
+                    <section class="bottomL">Bottom-L <h5>bottom-L</h5></section>
+                    <section class="bottom">Bottom <h5>bottom</h5></section>
+                    <section class="bottomR">Bottom-R <h5>bottom-R</h5></section>
+                    <footer>Footer <h5>footer footer footer</h5></footer>
+                </section>
+            </section>
+        </section>
+        <div class="main-title">3️⃣Arrangement</div>
+        <section class="arrangement">
+            <section class="item">
+                <div class="title">✔Justify-Content</div><span class="desc">using 'justify-content'</span>
+                <section class="justify">
+                    <section class="j-start">
+                        <div style="color:#080a82;">start</div>
+                        <div>R1C2</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="j-end">
+                        <div>R1C1</div>
+                        <div>R1C2</div>
+                        <div style="color:#080a82;">end</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="j-center">
+                        <div>R1C1</div>
+                        <div style="color:#080a82;">center</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R1C1</div>
+                        <div>R2C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="j-space-evenly">
+                        <div style="color:#080a82;">space</div>
+                        <div style="color:#080a82;">-</div>
+                        <div style="color:#080a82;">evenly</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="j-space-between">
+                        <div style="color:#080a82;">space</div>
+                        <div style="color:#080a82;">-</div>
+                        <div style="color:#080a82;">between</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="j-space-around">
+                        <div style="color:#080a82;">space</div>
+                        <div style="color:#080a82;">-</div>
+                        <div style="color:#080a82;">around</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="j-stretch">
+                        <div>R1C1</div>
+                        <div style="color:#080a82;">stretch</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                </section>
+            </section>
+            <section class="item">
+                <div class="title">✔Align-Items</div>
+                <section class="align-item">
+                    <section class="a-start">
+                        <div style="color:#080a82;">start</div>
+                        <div>R1C2</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R1C1</div>
+                        <div>R2C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="a-end">
+                        <div>R1C1</div>
+                        <div>R1C2</div>
+                        <div style="color:#080a82;">end</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="a-center">
+                        <div>R1C1</div>
+                        <div style="color:#080a82;">center</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R1C1</div>
+                        <div>R2C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="a-stretch">
+                        <div>R1C1</div>
+                        <div style="color:#080a82;">stretch</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                </section>
+            </section>
+            <section class="item">
+                <div class="title">✔Align-Content</div>
+                <section class="align-content">
+                    <section class="ac-start">
+                        <div style="color:#080a82;">start</div>
+                        <div>R1C2</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="ac-end">
+                        <div>R1C1</div>
+                        <div>R1C2</div>
+                        <div style="color:#080a82;">end</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="ac-center">
+                        <div>R1C1</div>
+                        <div style="color:#080a82;">center</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="ac-stretch">
+                        <div>R1C1</div>
+                        <div style="color:#080a82;">stretch</div>
+                        <div>R1C3</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R1C1</div>
+                        <div>R2C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="ac-space-evenly">
+                        <div style="color:#080a82;">space</div>
+                        <div style="color:#080a82;">-</div>
+                        <div style="color:#080a82;">evenly</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="ac-space-between">
+                        <div style="color:#080a82;">space</div>
+                        <div style="color:#080a82;">-</div>
+                        <div style="color:#080a82;">between</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+                    <section class="ac-space-around">
+                        <div style="color:#080a82;">space</div>
+                        <div style="color:#080a82;">-</div>
+                        <div style="color:#080a82;">around</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>R2C3</div>
+                        <div>R3C1</div>
+                        <div>R3C2</div>
+                        <div>R3C3</div>
+                    </section>
+            </section>
+        </section>
+        <div class="main-title">4️⃣Implicit</div>
+        <section class="implicit">
+            <section class="item">
+                <div class="title">✔Auto-Row</div>
+                <section class="grid-auto">
+                    <span>Before</span>
+                    <section class="grid-auto-row-before">
+                        <div>R1C1</div>
+                        <div>R1C2</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>extra1</div>
+                        <div>extra2</div>
+                    </section>
+                    <span>After</span>
+                    <section class="grid-auto-row-after">
+                        <div>R1C1</div>
+                        <div>R1C2</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>grid-auto-row:5vh</div>
+                        <div>grid-auto-row:5vh</div>
+                    </section>
+                </section>
+            </section>
+            <section class="item">
+                <div class="title">✔Auto-Col</div>
+                <section class="grid-auto">
+                    <span>Before</span>
+                    <section class="grid-auto-col-before">
+                        <div>R1C1</div>
+                        <div>R1C2</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div>extra1</div>
+                    </section>
+                    <span>After</span>
+                    <section class="grid-auto-col-after">
+                        <div>R1C1</div>
+                        <div>R1C2</div>
+                        <div>R2C1</div>
+                        <div>R2C2</div>
+                        <div class="temp">grid-auto-col:10vh</div>
+                    </section>
+                </section>
+            </section>
+            <section class="item">
+                <div class="title">✔Auto-Flow</div>
+                <section class="auto-flow">
+                    <section class="auto-row">
+                        <div>1</div>
+                        <div class="forTest">2_row</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>                       
+                    </section>
+
+                    <section class="auto-row-dense">
+                        <div>1</div>
+                        <div class="forTest">2_row-dense</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                    </section>
+                    <section class="auto-col">
+                        <div class="forTest2">1</div>
+                        <div class="forTest3">2_col</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>                       
+                    </section>
+                    <section class="auto-col-dense">
+                        <div class="forTest2">1</div>
+                        <div class="forTest3">2_col-dense</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>                       
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
